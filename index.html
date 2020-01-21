@@ -1,1 +1,126 @@
-"Hello World" 
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <title>First JavaScript Site</title>
+</head>
+
+<script defer>
+    function music() {
+        var x = document.getElementById("music");
+        var y = document.getElementById("back");
+
+        if (x.style.display === "block") {
+            x.style.display = "none";
+            y.style.display = "none";
+        } else {
+            x.style.display = "block";
+            y.style.display = "block";
+        }
+    }
+
+    function text() {
+        var x = document.getElementById("about");
+        var y = document.getElementById("back");
+
+        if (x.style.display === "block") {
+            x.style.display = "none";
+            y.style.display = "none";
+        } else {
+            x.style.display = "block";
+            y.style.display = "block";
+        }
+    }
+
+    function image() {
+        var x = document.getElementById("school");
+        var y = document.getElementById("back");
+
+        if (x.style.display === "block") {
+            x.style.display = "none";
+            y.style.display = "none";
+        } else {
+            x.style.display = "block";
+            y.style.display = "block";
+        }
+    }
+
+    function video() {
+        var x = document.getElementById("hobby");
+        var y = document.getElementById("back");
+
+        if (x.style.display === "block") {
+            x.style.display = "none";
+            y.style.display = "none";
+        } else {
+            x.style.display = "block";
+            y.style.display = "block";
+        }
+    }
+
+
+    function hide() {
+        var x = document.getElementsByClassName("content");
+        var y = document.getElementById("back");
+
+        for (z = 0; z <= 3; z++) {
+            if (x[z].style.display === "block") {
+                x[z].style.display = "none";
+                y.style.display = "none";
+            }
+        }
+    }
+
+</script>
+
+<body>
+    <div class="content" id="music">
+        <p>Music is very important to me.</p>
+        <p>I mostly listen to metal, rock and hiphop.</p>
+        <p>My favourite bands / musicians are<ul>
+            <li>Slipknot</li>
+            <li>Rammstein</li>
+            <li>System of a Down</li>
+            <li>The Misfits</li>
+            <li>Taco Hemingway</li>
+            <li>Bedoes</li>
+        </ul></p>
+    </div>
+    <div class="content" id="about">
+        <p>My name is Michal. I was born in Poland 17 years ago and currently live in Austria.<br>
+            My hobbies are gaming, programming and meeting friends.<br>I'm also an animal lover. I especially like dogs.<br>
+            My favourite dog breed are bullterriers, I think they're totally adorable.<br>I use social media - my IG is linked
+             <a href="https://www.instagram.com/michaluwu/">here</a>.
+        </p>
+    </div>
+    <div class="content" id="school">
+        <p style="margin-top: 10vh;">School:</p>
+        <h1>HTL Leonding</h1>
+        <a href="https://www.htl-leonding.at/">Homepage</a>
+    </div>
+    <div class="content" id="hobby">
+        <p>I spend many evenings playing video games. all-time favourites are:
+            <ul>
+                <li>CS:GO</li>
+                <li>Gothic 1 & 2</li>
+                <li>Life is Strange</li>
+                <li>The Elder Scrolls V: Skyrim</li>
+                <li>Fallout: New Vegas</li>
+                <li><a href="https://www.steamcommunity.com/id/zzzAAzzz/">Steam Account</a></li>
+            </ul>
+        </p>      
+    </div>
+    <div onclick="music()" class="button" id="st"></div>
+    <div onclick="text()" class="button" id="nd"></div>
+    <div onclick="image()" class="button" id="rd"></div>
+    <div onclick="video()" class="button" id="th"></div>
+    <div onclick="hide()" id="back">
+        <p>Hide</p>
+    </div>
+</body>
+
+</html>
